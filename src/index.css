@@ -1,0 +1,122 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+html,body {
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI",
+        "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  color: white;
+  /* background: rgb(30,30,30); */
+}
+
+
+#home {
+  height: 100vh;
+}
+
+
+#home-img {
+  position: fixed;
+  z-index: -999;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Bali.png");
+}
+
+
+#about {
+  height: 100vh;
+  background: rgb(30,30,30);
+}
+
+
+.abo1 {
+  text-decoration: none;
+  color: white;
+}
+
+
+.wabpage {
+  align-items: center;
+  display: flex;
+}
+
+
+#title { 
+  text-align: center;
+
+}
+
+#title2 {
+  text-align: center;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 500px; */
+  padding: 10px;
+}
+
+
+.hidden {
+  display: none !important;
+
+}
+
+.hea1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  padding: 10px;
+}
+
+footer h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+#foo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+#foo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  color: #f30707;;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+
+}
+
+img {
+  width: 90px;
+  height: 90px;
+}
