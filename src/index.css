@@ -14,6 +14,13 @@ html,body {
 }
 
 
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
 #home {
   height: 100vh;
 }
@@ -135,3 +142,4 @@ img {
   width: 90px;
   height: 90px;
 }
+
