@@ -36,6 +36,21 @@ html,body {
   background: rgb(30,30,30);
 }
 
+#portfolio {
+  height: 100vh;
+  background: rgb(42, 4, 131);
+}
+
+#contact {
+  height: 100vh;
+  background: rgb(124, 6, 118);
+}
+
+#friend {
+  height: 100vh;
+  background: rgb(170, 93, 25);
+}
+
 
 .abo1 {
   text-decoration: none;
