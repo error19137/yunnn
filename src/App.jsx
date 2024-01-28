@@ -9,6 +9,7 @@ import About from './components/about'
 import Contact from './components/contact'
 import Portfolio from './components/portfolio'
 import Friend from './components/friend'
+import Cc from './components/cc'
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
       <Contact />
       <Portfolio />
       <Friend />
+      <Cc />  
       <Footer />
 
     </div>
