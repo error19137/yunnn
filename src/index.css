@@ -153,20 +153,11 @@ footer h1{
   color: rgb(88,101,242);
 }
 
-Friend .Joseph {
+#Yun a ,#sao-x a,#Joseph a{
   text-decoration: none;
-  color: rgb(255,255,255);
+  color: white;
 }
 
-Friend .sao-x {
-  text-decoration: none;
-  color: rgb(255,255,255);
-}
-
-Friend .Yun {
-  text-decoration: none;
-  color: rgb(255,255,255);
-}
 
 #foo1 {
   display: flex;
