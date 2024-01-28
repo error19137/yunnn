@@ -3,20 +3,18 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-html,body {
+html, body {
   font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI",
-        "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100%;
   color: white;
-  /* background: rgb(30,30,30); */
 }
-
 
 h1 {
   font-size: 2rem;
@@ -29,7 +27,6 @@ h1 {
   height: 100vh;
 }
 
-
 #home-img {
   position: fixed;
   z-index: -999;
@@ -41,30 +38,13 @@ h1 {
   background-image: url("/img/Bali.png");
 }
 
-
-#about {
-  height: 100vh;
-  background: rgb(30,30,30);
-}
-
-#portfolio {
-  height: 100vh;
-  background: rgb(30,30,30);
-}
-
-#contact {
-  height: 100vh;
-  background: rgb(30,30,30);
-}
-
-#friend {
-  height: 100vh;
-  background: rgb(30,30,30);
-}
-
+#about,
+#portfolio,
+#contact,
+#friend,
 #cc {
   height: 100vh;
-  background: rgb(30,30,30);
+  background: rgb(30, 30, 30);
 }
 
 .abo1 {
@@ -72,18 +52,12 @@ h1 {
   color: white;
 }
 
-
 .wabpage {
   align-items: center;
   display: flex;
 }
 
-
-#title { 
-  text-align: center;
-
-}
-
+#title,
 #title2 {
   text-align: center;
 }
@@ -97,14 +71,11 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 500px; */
   padding: 10px;
 }
 
-
 .hidden {
   display: none !important;
-
 }
 
 .hea1 {
@@ -120,7 +91,7 @@ h1 {
   color: white;
 }
 
-footer h1{
+footer h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,36 +101,38 @@ footer h1{
 
 #instagram {
   text-decoration: none;
-  color: rgb(209,1,219);
+  color: rgb(209, 1, 219);
 }
 
 #facebook {
   text-decoration: none;
-  color: rgb(19,156,247);
+  color: rgb(19, 156, 247);
 }
 
 #Youtube {
   text-decoration: none;
-  color: rgb(255,0,0);
+  color: rgb(255, 0, 0);
 }
 
 #Line {
   text-decoration: none;
-  color: rgb(0,255,0);
+  color: rgb(0, 255, 0);
 }
 
 #Discord {
   text-decoration: none;
-  color: rgb(88,101,242);
+  color: rgb(88, 101, 242);
 }
 
-#Yun a ,#sao-x a,#Joseph a{
+#Yun a,
+#sao-x a,
+#Joseph a {
   text-decoration: none;
   color: white;
 }
 
-
-#foo1 {
+#foo1,
+#foo2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,20 +141,12 @@ footer h1{
 }
 
 #foo2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-  color: #f30707;;
+  color: #f30707;
 }
-
-
 
 svg {
   width: 50px;
   height: 50px;
-
 }
 
 img {
@@ -189,3 +154,31 @@ img {
   height: 90px;
 }
 
+
+@media only screen and (max-width: 600px) {
+  #header {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hea1 {
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  #home-img {
+    position: relative;
+    height: 50vh;
+  }
+
+  #about,
+  #portfolio,
+  #contact,
+  #friend,
+  #cc {
+    height: auto;
+    padding-top: 80px; /* Adjust as needed */
+  }
+}
