@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 html,body {
   font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI",
         "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
@@ -45,22 +49,22 @@ h1 {
 
 #portfolio {
   height: 100vh;
-  background: rgb(42, 4, 131);
+  background: rgb(30,30,30);
 }
 
 #contact {
   height: 100vh;
-  background: rgb(124, 6, 118);
+  background: rgb(30,30,30);
 }
 
 #friend {
   height: 100vh;
-  background: rgb(170, 93, 25);
+  background: rgb(30,30,30);
 }
 
 #cc {
   height: 100vh;
-  background: rgb(60, 2, 123);
+  background: rgb(30,30,30);
 }
 
 .abo1 {
@@ -111,12 +115,57 @@ h1 {
   padding: 10px;
 }
 
+.hea1 a {
+  text-decoration: none;
+  color: white;
+}
+
 footer h1{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 10px;
+}
+
+#instagram {
+  text-decoration: none;
+  color: rgb(209,1,219);
+}
+
+#facebook {
+  text-decoration: none;
+  color: rgb(19,156,247);
+}
+
+#Youtube {
+  text-decoration: none;
+  color: rgb(255,0,0);
+}
+
+#Line {
+  text-decoration: none;
+  color: rgb(0,255,0);
+}
+
+#Discord {
+  text-decoration: none;
+  color: rgb(88,101,242);
+}
+
+Friend .Joseph {
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+
+Friend .sao-x {
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+
+Friend .Yun {
+  text-decoration: none;
+  color: rgb(255,255,255);
 }
 
 #foo1 {

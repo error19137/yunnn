@@ -33,11 +33,12 @@ const Header = () => {
             </div>
 
             <div className="hea1">
-                <div className="">首頁</div>
-                <div className="">關於我</div>
-                <div className="">聯絡我</div>
-                <div className="">校內成績與作品</div>
-                <div className="">友情連結</div>
+                <a href="#home">首頁</a>
+                <a href="#about">關於我</a>
+                <a href="#contact">關於我</a>
+                <a href="#portfolio">校內成績與作品</a>
+                <a href="#friend">友情連結</a>
+                <a href="#cc">CC授權條款</a>
 
             </div>
         </header>
