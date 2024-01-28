@@ -14,7 +14,7 @@ const Footer = () => {
         <IconBrandDiscord />
         </div>
         <div id="foo2">
-        <h2>版權所有© 2024/01~2024 Yun的網站 React版</h2>
+        <h2>版權所有© 2024/01~2024 Yun's Website React版</h2>
         </div>
         </footer>
     );
