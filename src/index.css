@@ -176,7 +176,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #header {
     height: auto;
     flex-direction: column;
@@ -190,7 +190,7 @@ img {
   }
 
   #home-img {
-    max-height: 500px;
+    height: 100vh;
   }
 
   #about,
@@ -198,7 +198,7 @@ img {
   #contact,
   #friend,
   #cc {
-    max-height: 500px;
+    height: 100vh;
     padding-top: 80px;
   }
 
@@ -207,7 +207,6 @@ img {
   }
 
   #foo1, #foo2 {
-    flex-direction: column;
     text-align: center;
   }
 
@@ -223,7 +222,7 @@ img {
 }
 
 
-@media only screen and (max-device-width: 600px) and (orientation: landscape) {
+@media screen and (max-device-width: 600px) and (orientation: landscape) {
   #header {
     height: 60px; 
   }
