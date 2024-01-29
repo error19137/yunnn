@@ -154,9 +154,29 @@ img {
   height: 90px;
 }
 
+@media screen and (max-width: 768px) {
+  #menu-list {
+      transition: 0.3s ease-in-out;
+      max-height: 0;
+      overflow: hidden;
+  }
 
+  #menu-list.visible {
+      max-height: 500px; /* 适当调整高度 */
+  }
 
-@media only screen and (max-width: 600px) {
+  /* 动画效果 */
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+}
+
+@media only screen and (max-width: 768px) {
   #header {
     height: auto;
     flex-direction: column;
@@ -170,8 +190,7 @@ img {
   }
 
   #home-img {
-    position: relative;
-    height: 50vh;
+    max-height: 500px;
   }
 
   #about,
@@ -179,7 +198,7 @@ img {
   #contact,
   #friend,
   #cc {
-    height: auto;
+    max-height: 500px;
     padding-top: 80px;
   }
 
@@ -194,7 +213,7 @@ img {
 
   svg {
     max-width: 100%; 
-    height: auto;
+    max-height: 100%;
   }
 
   img {
