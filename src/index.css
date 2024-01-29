@@ -75,6 +75,37 @@ nav a {
 }
 
 
+#react{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#react img {
+  height: 200px;
+  will-change: filter;
+  transition: filter 300ms; 
+}
+
+@keyframes logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #react img {
+      animation: logo-spin infinite 20s linear;
+  }
+}
+
+#react img:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
 .page {
   height: 100vh;
 }
