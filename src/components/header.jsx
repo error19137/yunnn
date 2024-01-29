@@ -35,7 +35,7 @@ const Header = () => {
             <nav>
                 <a href="#home">首頁</a>
                 <a href="#about">關於我</a>
-                <a href="#contact">聯絡我</a>
+                {/* <a href="#contact">聯絡我</a> */}
                 <a href="#portfolio">校內成績與作品</a>
                 <a href="#friend">友情連結</a>
                 <a href="#cc">CC授權條款</a>
