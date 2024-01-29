@@ -25,14 +25,14 @@ const Header = () => {
     }, [prevScrollPos])
 
     return (
-        <header id="header" className={navbarHidden ? "hidden" : ""}>
+        <header className={navbarHidden ? "hidden" : ""}>
 
             <div className="wabpage">
-                <img src="/img/logo.png" alt="logo" />
-                <h1>Yun's Website</h1>
+                <img id="logo" src="/img/logo.png" alt="logo" />
+                <div>Yun's Website</div>
             </div>
 
-            <div className="hea1">
+            <nav>
                 <a href="#home">首頁</a>
                 <a href="#about">關於我</a>
                 <a href="#contact">聯絡我</a>
@@ -40,7 +40,7 @@ const Header = () => {
                 <a href="#friend">友情連結</a>
                 <a href="#cc">CC授權條款</a>
 
-            </div>
+            </nav>
         </header>
     );
 }

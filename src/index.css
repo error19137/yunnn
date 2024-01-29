@@ -5,27 +5,63 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-html, body {
   font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI",
     "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
   color: white;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 600;
+html,
+body {
+
   margin: 0;
   padding: 0;
+  min-height: 100%;
+
+  /* background: rgb(30,30,30); */
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 500px; */
+  padding: 10px;
+}
+
+#logo {
+  width: 45;
+  height: 45px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+}
+
 
 #home {
   height: 100vh;
 }
+
 
 #home-img {
   position: fixed;
@@ -38,18 +74,31 @@ h1 {
   background-image: url("/img/Bali.png");
 }
 
-#about,
-#portfolio,
-#contact,
-#friend,
-#cc {
+
+.page {
   height: 100vh;
+}
+
+#about {
   background: rgb(30, 30, 30);
 }
 
-.abo1 {
-  text-decoration: none;
-  color: white;
+#friend {
+  background: rgb(30, 30, 30);
+}
+
+#portfolio {
+  background: rgb(30, 30, 30);
+}
+
+#cc {
+  background: rgb(30, 30, 30);
+}
+
+
+#contact li {
+  /* 自動換行: break-word;字 */
+  word-break: break-word;
 }
 
 .wabpage {
@@ -57,46 +106,22 @@ h1 {
   display: flex;
 }
 
-#title,
+
+#title {
+  text-align: center;
+
+}
+
 #title2 {
   text-align: center;
 }
 
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
+
+
 
 .hidden {
   display: none !important;
-}
 
-.hea1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 500px;
-  padding: 10px;
-}
-
-.hea1 a {
-  text-decoration: none;
-  color: white;
-}
-
-footer h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
 }
 
 #instagram {
@@ -131,104 +156,36 @@ footer h1 {
   color: white;
 }
 
-#foo1,
-#foo2 {
+footer {
+  background: rgb(30, 30, 30);
+  height: 100px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 10px;
 }
 
-#foo2 {
+#footer-contact a {
+  color: white;
+}
+
+#footer-cc {
   color: #f30707;
 }
 
+
+
 svg {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
-
-img {
-  width: 90px;
-  height: 90px;
-}
-
-@media screen and (max-width: 768px) {
-  #menu-list {
-      transition: 0.3s ease-in-out;
-      max-height: 0;
-      overflow: hidden;
-  }
-
-  #menu-list.visible {
-      max-height: 500px; /* 适当调整高度 */
-  }
-
-  /* 动画效果 */
-  @keyframes fadeIn {
-      from {
-          opacity: 0;
-      }
-      to {
-          opacity: 1;
-      }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #header {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hea1 {
-    width: 100%;
-    padding: 10px;
-    justify-content: center;
-  }
-
-  #home-img {
-    height: 100vh;
-  }
-
-  #about,
-  #portfolio,
-  #contact,
-  #friend,
-  #cc {
-    height: 100vh;
-    padding-top: 80px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  #foo1, #foo2 {
-    text-align: center;
-  }
-
-  svg {
-    max-width: 100%; 
-    max-height: 100%;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-
-@media screen and (max-device-width: 600px) and (orientation: landscape) {
-  #header {
-    height: 60px; 
-  }
-
-  .hea1 {
-    padding: 5px;
-  }
-}
-
