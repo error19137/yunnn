@@ -156,7 +156,6 @@ img {
 
 
 
-/* 適用於手機裝置的媒體查詢 */
 @media only screen and (max-width: 600px) {
   #header {
     height: auto;
@@ -181,11 +180,11 @@ img {
   #friend,
   #cc {
     height: auto;
-    padding-top: 80px; /* 調整視需要的數值 */
+    padding-top: 80px;
   }
 
   h1 {
-    font-size: 1.5rem; /* 調整字型大小以提高在手機上的可讀性 */
+    font-size: 1.5rem;
   }
 
   #foo1, #foo2 {
@@ -194,24 +193,24 @@ img {
   }
 
   svg {
-    max-width: 100%; /* 讓 SVG 圖示自適應寬度 */
+    max-width: 100%; 
     height: auto;
   }
 
   img {
-    max-width: 100%; /* 讓圖片自適應寬度 */
+    max-width: 100%;
     height: auto;
   }
 }
 
-/* 處理手機橫屏的情況 */
+
 @media only screen and (max-device-width: 600px) and (orientation: landscape) {
   #header {
-    height: 60px; /* 調整橫屏時的 header 高度 */
+    height: 60px; 
   }
 
   .hea1 {
-    padding: 5px; /* 調整橫屏時的 padding */
+    padding: 5px;
   }
 }
 
